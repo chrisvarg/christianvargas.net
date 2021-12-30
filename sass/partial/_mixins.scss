@@ -1,0 +1,25 @@
+// ---------- mixins ----------
+
+@function get-opacity($color, $opacity) {
+    @return rgba($color, $opacity);
+}
+
+// calcula la relación de los subtitulos
+@mixin substittle($size) {
+    font-size: $size - 3;
+}
+
+// calcula el tamaño de fuentes usando rem
+@function calculateRem($size) {
+	$remSize: calc($size / 16px);
+	@return calc($remSize) * 1rem;
+}
+
+// adapta el tamaño de las fuentes
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;
+}
+
+

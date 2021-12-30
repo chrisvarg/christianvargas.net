@@ -1,0 +1,25 @@
+@use '../partial/variable' as v;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(/css/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: v.$font;
+}
+
+a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: v.$colorText;
+    font-weight: 700;
+}
+

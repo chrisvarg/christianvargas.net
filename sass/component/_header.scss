@@ -1,0 +1,98 @@
+@use '../partial/variable' as v;
+@use '../partial/mixins' as m;
+
+
+
+.header {
+    margin-top: 10px;
+    min-width: 375px;
+    padding: 0 20px;
+    min-height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: m.get-opacity(v.$color-secundary, .54);
+    @include m.font-size(16px);
+
+    &__logo {
+        
+        figure {
+            min-height: 30px;
+        }
+    }
+
+    &__menu {
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+#menu__burguer {
+    display: none;
+
+    &:checked ~ .menu__content {
+        width: 100vw;
+        background-color: brown;
+        padding: 50px 0;
+        height: 100%;
+
+    }
+}
+
+.burguer__container {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    // right: 20px;
+    z-index: 1;
+
+    &:hover {
+        background-color: v.$colorTitle;
+    }
+
+    i {
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 6.5px;
+    }
+
+}
+
+.menu {
+
+    &__content {
+        background-color: coral;
+        top: 0;
+        left: 0;
+        position: absolute;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+.list {
+
+    &__items {
+        height: 60px;
+        width: 100%;
+        
+        a {
+            // background-color: gray;
+            // border: 1px solid black;
+            padding: 16px 0;
+
+            &:hover {
+                background-color: v.$colorTitle;
+            }
+        }
+    }
+
+
+}
+
+
