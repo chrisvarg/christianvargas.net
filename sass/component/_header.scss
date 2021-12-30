@@ -11,6 +11,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: fixed;
     background-color: m.get-opacity(v.$color-secundary, .54);
     @include m.font-size(16px);
 
@@ -33,10 +34,10 @@
 
     &:checked ~ .menu__content {
         width: 100vw;
-        background-color: brown;
         padding: 50px 0;
         height: 100%;
-
+        background-color: v.$color-primary;
+        position: fixed;
     }
 }
 
@@ -46,6 +47,7 @@
     position: absolute;
     // right: 20px;
     z-index: 1;
+
 
     &:hover {
         background-color: v.$colorTitle;
