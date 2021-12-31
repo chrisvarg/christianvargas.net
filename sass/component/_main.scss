@@ -1,0 +1,162 @@
+@use '../partial/mixins' as m;
+@use '../partial/variable' as v;
+
+.main {
+    margin: 0 2rem;
+    padding-top: 11rem;
+
+    &__presentation {
+        margin: 0 auto;
+        margin-bottom: 6rem;
+        min-width: 33.6rem;
+        text-align: center;
+        font-weight: bold
+    }
+
+    &__about {
+        margin-bottom: 6rem;
+        min-height: 35rem;
+    }
+}
+
+// ---------- Presentation ----------
+
+.presentation {
+
+    &__greet {
+        @include m.font-size(2.4rem)
+    }
+
+    &__name {
+        @include m.font-size(5rem);
+    }
+
+    &__web {
+        @include m.font-size(2.4rem);
+        color: v.$colorTitle;
+        margin-bottom: 3rem;
+    }
+
+    &__social {
+        height: 3.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        
+        a {
+            display: block;
+            width: 2.4rem;
+        }
+
+        i {
+            @include m.font-size(2.4rem);
+        }
+
+        &--element {
+            margin-right: 3rem;
+        }
+    }
+}
+
+// ---------- End Presentation ----------
+
+
+// ---------- About ----------
+
+.about {
+
+    &__photo {
+        width: 100%;
+        margin-bottom: 6rem;
+        padding: 0 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__tittle {
+        @include m.substitle(5rem);
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__profile {
+        margin-bottom: 3rem
+    }
+    
+    .profile {
+        &__subtitle {
+            @include m.font-size(2.4rem);
+            color: v.$colorTitle;
+            margin-bottom: 2rem;
+        }
+
+        &__text {
+            @include m.font-size(1.6rem);
+        }
+    }
+
+    &__buttoms {
+
+        text-align: center;
+        
+        .buttom {
+            @include m.buttom(1.4rem);
+            border: .2rem solid v.$colorTitle;
+            border-radius: 3rem;
+            
+
+            &__write {
+                margin-right: 2rem;
+                
+                svg {
+                    // margin-left: .5rem;
+                    // margin-top: .3rem;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &__skills {
+        margin-bottom: 3rem; 
+    }
+}
+
+// ---------- end about ----------
+
+.skills {
+    &__title {
+        @include m.font-size(2.4rem);
+        color: v.$colorTitle;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        width: 45%;
+
+        img {
+            // width: 35px;
+            height: 3.5rem;
+            margin-right: 1.2rem;
+        }
+
+        p {
+            @include m.font-size(1.6rem);
+        }
+    }
+}
+
+// ---------- End skills ----------
+

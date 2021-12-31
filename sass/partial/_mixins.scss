@@ -1,3 +1,5 @@
+@use "../partial/variable" as v;
+
 // ---------- mixins ----------
 
 @function get-opacity($color, $opacity) {
@@ -5,8 +7,10 @@
 }
 
 // calcula la relación de los subtitulos
-@mixin substittle($size) {
-    font-size: $size - 3;
+@mixin substitle($size) {
+	font-size: $size - 3;
+	// font-size: calculateRem($size);
+	// line-height: calculateRem($size)*1.5;
 }
 
 // calcula el tamaño de fuentes usando rem
@@ -18,8 +22,21 @@
 // adapta el tamaño de las fuentes
 @mixin font-size($size) {
 	font-size: $size;
-	font-size: calculateRem($size);
-	line-height: calculateRem($size)*1.5;
+	// font-size: calculateRem($size);
+	line-height: $size * 1.5;
+}
+
+// boton base
+@mixin buttom($fontSize) {
+	padding: 10px 15px;
+	font-size: $fontSize;
+	font-weight: 700;
+	color: v.$colorTitle;
+
+	&:hover {
+		background-color: v.$colorTitle;
+		color: v.$color-primary;
+	}
 }
 
 

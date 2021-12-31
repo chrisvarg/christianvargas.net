@@ -350,21 +350,21 @@ html {
   background-repeat: no-repeat;
   background-position: top center;
   font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 62.5%;
 }
 
 a {
   display: inline-block;
-  height: 100%;
-  width: 100%;
   text-decoration: none;
   color: #FFFFFF;
 }
 
 .header {
-  min-width: 375px;
+  min-width: 37.5rem;
   width: 100%;
-  padding: 0 20px;
-  min-height: 50px;
+  padding: 0 2rem;
+  min-height: 5rem;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -372,15 +372,14 @@ a {
   position: fixed;
   background-color: rgba(29, 30, 35, 0.54);
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 .header__logo figure {
-  min-height: 30px;
+  min-height: 3rem;
 }
 .header__menu {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 }
 
 #menu__burguer {
@@ -389,21 +388,21 @@ a {
 #menu__burguer:checked ~ .menu__content {
   width: 100vw;
   height: 100%;
-  padding: 250px 0;
+  padding: 25rem 0;
   position: fixed;
   transition: all 1s;
 }
 
 .burguer__container {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   position: absolute;
   z-index: 1;
 }
 .burguer__container i {
-  font-size: 20px;
-  padding: 5px;
-  padding-left: 6.5px;
+  font-size: 2rem;
+  padding: 0.5rem;
+  padding-left: 0.65rem;
   color: #FFFFFF;
 }
 .burguer__container i:hover {
@@ -414,7 +413,7 @@ a {
   background-color: coral;
   top: 0;
   left: 0;
-  margin-top: -190px;
+  margin-top: -19rem;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -426,18 +425,146 @@ a {
 }
 
 .list__items {
-  height: 60px;
+  height: 6rem;
   width: 100%;
   list-style: none;
 }
 .list__items a {
-  font-size: 20px;
-  padding: 16px 0;
+  font-size: 2rem;
+  padding-top: 2.3rem;
   font-weight: 700;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 .list__items a:hover {
   background-color: #00B2FF;
+}
+
+.main {
+  margin: 0 2rem;
+  padding-top: 11rem;
+}
+.main__presentation {
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  min-width: 33.6rem;
+  text-align: center;
+  font-weight: bold;
+}
+.main__about {
+  margin-bottom: 6rem;
+  min-height: 35rem;
+}
+
+.presentation__greet {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+.presentation__name {
+  font-size: 5rem;
+  line-height: 7.5rem;
+}
+.presentation__web {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #00B2FF;
+  margin-bottom: 3rem;
+}
+.presentation__social {
+  height: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.presentation__social a {
+  display: block;
+  width: 2.4rem;
+}
+.presentation__social i {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+.presentation__social--element {
+  margin-right: 3rem;
+}
+
+.about__photo {
+  width: 100%;
+  margin-bottom: 6rem;
+  padding: 0 2rem;
+}
+.about__photo img {
+  width: 100%;
+}
+.about__tittle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about__profile {
+  margin-bottom: 3rem;
+}
+.about .profile__subtitle {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #00B2FF;
+  margin-bottom: 2rem;
+}
+.about .profile__text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.about__buttoms {
+  text-align: center;
+}
+.about__buttoms .buttom {
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00B2FF;
+  border: 0.2rem solid #00B2FF;
+  border-radius: 3rem;
+}
+.about__buttoms .buttom:hover {
+  background-color: #00B2FF;
+  color: #2D2E32;
+}
+.about__buttoms .buttom__write {
+  margin-right: 2rem;
+}
+.about__buttoms .buttom__write svg {
+  color: black;
+}
+.about__skills {
+  margin-bottom: 3rem;
+}
+
+.skills__title {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #00B2FF;
+  margin-bottom: 2rem;
+}
+.skills__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.skills__items {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.skills__items img {
+  height: 3.5rem;
+  margin-right: 1.2rem;
+}
+.skills__items p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
