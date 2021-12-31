@@ -358,17 +358,17 @@ a {
   width: 100%;
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 700;
 }
 
 .header {
-  margin-top: 10px;
   min-width: 375px;
+  width: 100%;
   padding: 0 20px;
   min-height: 50px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   position: fixed;
   background-color: rgba(29, 30, 35, 0.54);
   font-size: 16px;
@@ -388,10 +388,10 @@ a {
 }
 #menu__burguer:checked ~ .menu__content {
   width: 100vw;
-  padding: 250px 0;
   height: 100%;
-  background-color: #2D2E32;
+  padding: 250px 0;
   position: fixed;
+  transition: all 1s;
 }
 
 .burguer__container {
@@ -400,21 +400,25 @@ a {
   position: absolute;
   z-index: 1;
 }
-.burguer__container:hover {
-  background-color: #00B2FF;
-}
 .burguer__container i {
   font-size: 20px;
   padding: 5px;
   padding-left: 6.5px;
+  color: #FFFFFF;
+}
+.burguer__container i:hover {
+  background-color: #00B2FF;
 }
 
 .menu__content {
   background-color: coral;
   top: 0;
   left: 0;
+  margin-top: -190px;
   position: absolute;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #2D2E32;
 }
 .menu__list {
   display: flex;
@@ -424,9 +428,13 @@ a {
 .list__items {
   height: 60px;
   width: 100%;
+  list-style: none;
 }
 .list__items a {
+  font-size: 20px;
   padding: 16px 0;
+  font-weight: 700;
+  text-align: center;
 }
 .list__items a:hover {
   background-color: #00B2FF;
