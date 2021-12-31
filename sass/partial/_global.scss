@@ -1,4 +1,10 @@
+
+/**
+    ---------- My Styles ----------
+*/
+
 @use '../partial/variable' as v;
+@use '../partial/mixins' as m;
 
 * {
     box-sizing: border-box;
@@ -16,9 +22,25 @@ html {
     font-size: 62.5%;
 }
 
+h2 {
+    @include m.font-size(v.$title-size);
+}
+
+h3  {
+    @include m.font-size(v.$subtitle-size)
+}
+
+p {
+    @include m.font-size(v.$text-size);
+}
+
 a {
     display: inline-block;
     text-decoration: none;
     color: v.$colorText;
+}
+
+i {
+    @include m.font-size(v.$subtitle-size);
 }
 

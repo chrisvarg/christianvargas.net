@@ -2,13 +2,26 @@
 @use '../partial/variable' as v;
 
 .main {
-    margin: 0 2rem;
+    margin: 0 auto;
     padding-top: 11rem;
+    min-width: 33.6rem;
+    max-width: 44.3rem;
+
+    .h2 {
+        @include m.substitle(5rem);
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .h3 {
+        color: v.$colorTitle;
+        margin-bottom: 2rem;
+    }
 
     &__presentation {
         margin: 0 auto;
         margin-bottom: 6rem;
-        min-width: 33.6rem;
+        
         text-align: center;
         font-weight: bold
     }
@@ -17,22 +30,25 @@
         margin-bottom: 6rem;
         min-height: 35rem;
     }
+
+    &__portafolio {
+        margin-bottom: 6rem;
+    }
 }
 
 // ---------- Presentation ----------
 
 .presentation {
 
-    &__greet {
-        @include m.font-size(2.4rem)
+    .h3 {
+        color: v.$colorText;
     }
-
     &__name {
-        @include m.font-size(5rem);
+        line-height: 6.5rem;
+        font-weight: 700;
     }
 
     &__web {
-        @include m.font-size(2.4rem);
         color: v.$colorTitle;
         margin-bottom: 3rem;
     }
@@ -47,10 +63,6 @@
         a {
             display: block;
             width: 2.4rem;
-        }
-
-        i {
-            @include m.font-size(2.4rem);
         }
 
         &--element {
@@ -76,25 +88,14 @@
         }
     }
 
-    &__tittle {
-        @include m.substitle(5rem);
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
     &__profile {
         margin-bottom: 3rem
     }
     
     .profile {
         &__subtitle {
-            @include m.font-size(2.4rem);
             color: v.$colorTitle;
             margin-bottom: 2rem;
-        }
-
-        &__text {
-            @include m.font-size(1.6rem);
         }
     }
 
@@ -104,18 +105,18 @@
         
         .buttom {
             @include m.buttom(1.4rem);
-            border: .2rem solid v.$colorTitle;
-            border-radius: 3rem;
-            
-
+        
             &__write {
                 margin-right: 2rem;
-                
-                svg {
-                    // margin-left: .5rem;
-                    // margin-top: .3rem;
-                    color: black;
-                }
+            }
+            
+            span {
+                display: inline-block;
+                margin-right: .5rem;
+            }
+
+            i {
+                font-size: 1.6rem;
             }
         }
     }
@@ -127,12 +128,8 @@
 
 // ---------- end about ----------
 
+// ---------- Skills ----------
 .skills {
-    &__title {
-        @include m.font-size(2.4rem);
-        color: v.$colorTitle;
-        margin-bottom: 2rem;
-    }
 
     &__list {
         list-style: none;
@@ -147,16 +144,102 @@
         width: 45%;
 
         img {
-            // width: 35px;
             height: 3.5rem;
             margin-right: 1.2rem;
-        }
-
-        p {
-            @include m.font-size(1.6rem);
         }
     }
 }
 
-// ---------- End skills ----------
+// ========== End skills ==========
 
+
+// ========== Portafolio ==========
+
+.portafolio {
+
+    &__project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+
+}
+
+.project {
+    min-width: 33.5rem;
+    min-height: 43.8rem;
+    background-color: v.$color-secundary;
+    border-radius: 2rem;
+
+    &__img {
+        width: 100%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        
+        img {
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            width: 100%;
+        }
+    }
+
+    &__information {
+        margin: 0 2rem;
+    }
+}
+
+.information {
+
+    &__tech {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        gap: 1.5rem 2.9rem;
+        margin-bottom: 3rem;
+
+        li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            width: 45%;
+        }
+    }
+
+    &__buttoms {
+        text-align: center;
+
+        .buttom {
+            @include m.buttom(1.4rem);
+            
+            &__write {
+                margin-right: 3rem;
+            }
+        }
+
+        
+    }
+        
+}
+
+.tech__item {
+
+    img {
+        margin-right: 1.2rem;
+    }
+
+    &--html, &--css {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &--php {
+        width: 5.3rem;
+    }
+
+    &--mysql {
+        width: 5.1rem;
+        height: 3.5rem;
+    }
+    
+}

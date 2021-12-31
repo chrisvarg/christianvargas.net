@@ -338,6 +338,9 @@ template {
   display: none;
 }
 
+/**
+    ---------- My Styles ----------
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -354,10 +357,30 @@ html {
   font-size: 62.5%;
 }
 
+h2 {
+  font-size: 5rem;
+  line-height: 7.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+i {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
 }
 
 .header {
@@ -371,11 +394,9 @@ a {
   flex-wrap: wrap;
   position: fixed;
   background-color: rgba(29, 30, 35, 0.54);
-  font-size: 16px;
-  line-height: 24px;
 }
 .header__logo figure {
-  min-height: 3rem;
+  height: 3rem;
 }
 .header__menu {
   width: 3rem;
@@ -400,9 +421,8 @@ a {
   z-index: 1;
 }
 .burguer__container i {
-  font-size: 2rem;
-  padding: 0.5rem;
-  padding-left: 0.65rem;
+  font-size: 2.3rem;
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
   color: #FFFFFF;
 }
 .burguer__container i:hover {
@@ -442,13 +462,23 @@ a {
 }
 
 .main {
-  margin: 0 2rem;
+  margin: 0 auto;
   padding-top: 11rem;
+  min-width: 33.6rem;
+  max-width: 44.3rem;
+}
+.main .h2 {
+  font-size: 4.7rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main .h3 {
+  color: #00B2FF;
+  margin-bottom: 2rem;
 }
 .main__presentation {
   margin: 0 auto;
   margin-bottom: 6rem;
-  min-width: 33.6rem;
   text-align: center;
   font-weight: bold;
 }
@@ -456,18 +486,18 @@ a {
   margin-bottom: 6rem;
   min-height: 35rem;
 }
+.main__portafolio {
+  margin-bottom: 6rem;
+}
 
-.presentation__greet {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+.presentation .h3 {
+  color: #FFFFFF;
 }
 .presentation__name {
-  font-size: 5rem;
-  line-height: 7.5rem;
+  line-height: 6.5rem;
+  font-weight: 700;
 }
 .presentation__web {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
   color: #00B2FF;
   margin-bottom: 3rem;
 }
@@ -482,10 +512,6 @@ a {
   display: block;
   width: 2.4rem;
 }
-.presentation__social i {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-}
 .presentation__social--element {
   margin-right: 3rem;
 }
@@ -498,23 +524,12 @@ a {
 .about__photo img {
   width: 100%;
 }
-.about__tittle {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
 .about__profile {
   margin-bottom: 3rem;
 }
 .about .profile__subtitle {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
   color: #00B2FF;
   margin-bottom: 2rem;
-}
-.about .profile__text {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
 }
 .about__buttoms {
   text-align: center;
@@ -534,19 +549,17 @@ a {
 .about__buttoms .buttom__write {
   margin-right: 2rem;
 }
-.about__buttoms .buttom__write svg {
-  color: black;
+.about__buttoms .buttom span {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.about__buttoms .buttom i {
+  font-size: 1.6rem;
 }
 .about__skills {
   margin-bottom: 3rem;
 }
 
-.skills__title {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-  color: #00B2FF;
-  margin-bottom: 2rem;
-}
 .skills__list {
   list-style: none;
   display: flex;
@@ -562,9 +575,95 @@ a {
   height: 3.5rem;
   margin-right: 1.2rem;
 }
-.skills__items p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+
+.portafolio__project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.project {
+  min-width: 33.5rem;
+  min-height: 43.8rem;
+  background-color: #1D1E23;
+  border-radius: 2rem;
+}
+.project__img {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.project__img img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 100%;
+}
+.project__information {
+  margin: 0 2rem;
+}
+
+.information__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.9rem;
+  margin-bottom: 3rem;
+}
+.information__tech li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 45%;
+}
+.information__buttoms {
+  text-align: center;
+}
+.information__buttoms .buttom {
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00B2FF;
+  border: 0.2rem solid #00B2FF;
+  border-radius: 3rem;
+}
+.information__buttoms .buttom:hover {
+  background-color: #00B2FF;
+  color: #2D2E32;
+}
+.information__buttoms .buttom__write {
+  margin-right: 3rem;
+}
+
+.tech__item img {
+  margin-right: 1.2rem;
+}
+.tech__item--html, .tech__item--css {
+  width: 4rem;
+  height: 4rem;
+}
+.tech__item--php {
+  width: 5.3rem;
+}
+.tech__item--mysql {
+  width: 5.1rem;
+  height: 3.5rem;
+}
+
+.footer {
+  margin: 0 2rem;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact__logo .logo__img {
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+.contact__logo .logo__img img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

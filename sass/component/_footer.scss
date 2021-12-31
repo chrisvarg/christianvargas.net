@@ -1,0 +1,31 @@
+@use '../partial/variable' as v;
+@use '../partial/mixins' as m;
+
+.footer {
+
+    margin: 0 2rem;
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+.contact {
+    &__logo {
+
+        .logo {
+            &__img {
+                height: 6rem;
+                margin-bottom: 2rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+    
+        }
+    }
+
+}
+

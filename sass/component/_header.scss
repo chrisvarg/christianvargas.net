@@ -12,11 +12,10 @@
     flex-wrap: wrap;
     position: fixed;
     background-color: m.get-opacity(v.$color-secundary, .54);
-    @include m.font-size(16px);
 
     &__logo {
         figure {
-            min-height: 3rem;
+            height: 3rem;
         }
     }
 
@@ -45,9 +44,8 @@
     z-index: 1;
     
     i {
-        font-size: 2rem;
-        padding: .5rem;
-        padding-left: .65rem;
+        font-size: 2.3rem;
+        padding: .4rem .5rem .4rem .5rem ;
         color: v.$colorText;
         
         &:hover {
