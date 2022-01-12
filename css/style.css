@@ -383,6 +383,8 @@ i {
   line-height: 3.6rem;
 }
 
+/* Media Queries Mixin
+**********************/
 .header {
   min-width: 37.5rem;
   width: 100%;
@@ -397,6 +399,9 @@ i {
 }
 .header__logo figure {
   height: 3rem;
+}
+.header__logo .img__name {
+  display: none;
 }
 .header__menu {
   width: 3rem;
@@ -427,6 +432,11 @@ i {
 }
 .burguer__container i:hover {
   background-color: #00B2FF;
+}
+@media only screen and (min-width: 768px) {
+  .burguer__container {
+    background-color: brown;
+  }
 }
 
 .menu__content {
@@ -463,18 +473,19 @@ i {
 
 .main {
   margin: 0 auto;
+  margin-bottom: 6rem;
   padding-top: 11rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   min-width: 33.6rem;
   max-width: 44.3rem;
 }
 .main .h2 {
   font-size: 4.7rem;
   text-align: center;
-  margin-bottom: 3rem;
 }
 .main .h3 {
   color: #00B2FF;
-  margin-bottom: 2rem;
 }
 .main__presentation {
   margin: 0 auto;
@@ -486,16 +497,14 @@ i {
   margin-bottom: 6rem;
   min-height: 35rem;
 }
-.main__portafolio {
-  margin-bottom: 6rem;
-}
 
 .presentation .h3 {
   color: #FFFFFF;
 }
-.presentation__name {
+.presentation .h2 {
   line-height: 6.5rem;
   font-weight: 700;
+  font-size: 5rem;
 }
 .presentation__web {
   color: #00B2FF;
@@ -516,6 +525,10 @@ i {
   margin-right: 3rem;
 }
 
+.about__tittle {
+  line-height: 5.4rem;
+  margin-bottom: 3rem;
+}
 .about__photo {
   width: 100%;
   margin-bottom: 6rem;
@@ -560,6 +573,9 @@ i {
   margin-bottom: 3rem;
 }
 
+.skills__title {
+  margin-bottom: 2rem;
+}
 .skills__list {
   list-style: none;
   display: flex;
@@ -576,16 +592,19 @@ i {
   margin-right: 1.2rem;
 }
 
+.portafolio .h2 {
+  margin-bottom: 3rem;
+}
 .portafolio__project {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 3rem;
+  min-width: 33.5rem;
+  min-height: 43.8rem;
 }
 
 .project {
-  min-width: 33.5rem;
-  min-height: 43.8rem;
   background-color: #1D1E23;
   border-radius: 2rem;
 }
@@ -593,20 +612,28 @@ i {
   width: 100%;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  height: 18.2rem;
 }
 .project__img img {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   width: 100%;
+  height: 100%;
 }
 .project__information {
   margin: 0 2rem;
+  margin-top: 2rem;
 }
 
+.information__text {
+  margin-bottom: 2rem;
+  line-height: 2.76rem;
+  color: #00B2FF;
+}
 .information__tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem 2.9rem;
+  gap: 1.3rem 2.9rem;
   margin-bottom: 3rem;
 }
 .information__tech li {
@@ -617,6 +644,7 @@ i {
 }
 .information__buttoms {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .information__buttoms .buttom {
   padding: 10px 15px;
@@ -651,11 +679,35 @@ i {
 
 .footer {
   margin: 0 2rem;
+  text-align: center;
+}
+.footer p {
+  font-size: 1.4rem;
+}
+.footer span {
+  text-decoration: underline;
+}
+.footer span a {
+  color: #00B2FF;
 }
 .footer__contact {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  border-bottom: 3px solid #00B2FF;
+  margin-bottom: 3rem;
+}
+.footer__copyright {
+  color: #FFFFFF;
+}
+.footer__copyright a {
+  width: 2.4rem;
+}
+.footer__copyright p {
+  margin: 1.5rem 0;
+}
+.footer__copyright .linkedin,
+.footer__copyright .twitter {
+  margin-right: 3rem;
 }
 
 .contact__logo .logo__img {
@@ -664,6 +716,14 @@ i {
 }
 .contact__logo .logo__img img {
   height: 100%;
+}
+
+.together__build {
+  margin-bottom: 1rem;
+}
+.together__web {
+  margin-bottom: 3rem;
+  color: #00B2FF;
 }
 
 /*# sourceMappingURL=style.css.map */

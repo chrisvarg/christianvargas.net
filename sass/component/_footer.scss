@@ -4,13 +4,45 @@
 .footer {
 
     margin: 0 2rem;
+    text-align: center;
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    span {
+        text-decoration: underline;
+        
+        a {
+            color: v.$colorTitle;
+        }
+    }
+
     &__contact {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        border-bottom: 3px solid v.$colorTitle;
+        margin-bottom: 3rem;
     }
 
+    &__copyright {
+        color: v.$colorText;
+
+        a {
+            width: 2.4rem;
+        }
+
+        p {
+            margin: 1.5rem 0;
+        }
+
+        .linkedin,
+        .twitter {
+            margin-right: 3rem;
+        }
+    }
 }
+
 .contact {
     &__logo {
 
@@ -23,9 +55,18 @@
                     height: 100%;
                 }
             }
-    
         }
     }
-
 }
 
+.together {
+
+    &__build {
+        margin-bottom: 1rem;
+    }
+
+    &__web {
+        margin-bottom: 3rem;
+        color: v.$colorTitle;
+    }
+}

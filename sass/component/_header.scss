@@ -1,5 +1,6 @@
 @use '../partial/variable' as v;
 @use '../partial/mixins' as m;
+@use '../partial/breakpoint' as br;
 
 .header {
     min-width: 37.5rem;
@@ -17,6 +18,11 @@
         figure {
             height: 3rem;
         }
+
+        .img__name {
+            display: none;
+        }
+
     }
 
     &__menu {
@@ -51,6 +57,10 @@
         &:hover {
             background-color: v.$colorTitle;
         }
+    }
+
+    @include br.media(tablet) {
+        background-color: brown;
     }
 }
 
