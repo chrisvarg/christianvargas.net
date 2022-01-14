@@ -18,31 +18,35 @@
 
     <!-- header -->
     <header class="header">
+        <div class="header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <figure class="logo__img">
+                    <a href="index.html">
+                        <img src="/css/img/logo.svg" alt="logo christian" class="img__logo">
+                        <img src="/css/img/logoName.svg" alt="brand christian" class="img__name">
+                    </a>
+                </figure>
+            </div>
+    
+    
+            <div class="header__menu">
+    
+                <!-- burger menu -->
+                <input type="checkbox" id="menu__burguer">
+                <label for="menu__burguer" class="burguer__container">
+                    <i class="fas fa-bars"></i>
+                </label>
+    
+                <nav class="menu__content">
+                    <ul class="menu__list">
+                        <li class="list__items"><a href="#aboutMe">Sobre mi</a></li>
+                        <li class="list__items"><a href="#portafolio">Portafolio</a></li>
+                        <li class="list__items"><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <!-- logo -->
-        <div class="header__logo">
-            <figure class="logo__img">
-                <img src="/css/img/logo.svg" alt="logo christian" class="img__logo">
-                <img src="/css/img/logoName.svg" alt="logo christian" class="img__name">
-            </figure>
-        </div>
-
-
-        <div class="header__menu">
-
-            <!-- burger menu -->
-            <input type="checkbox" id="menu__burguer">
-            <label for="menu__burguer" class="burguer__container">
-                <i class="fas fa-bars"></i>
-            </label>
-
-            <nav class="menu__content">
-                <ul class="menu__list">
-                    <li class="list__items"><a href="">Sobre mi</a></li>
-                    <li class="list__items"><a href="">Portafolio</a></li>
-                    <li class="list__items"><a href="">Contacto</a></li>
-                </ul>
-            </nav>
         </div>
 
     </header>
@@ -66,12 +70,14 @@
                 </div>
             </section>
         </div>
+        <div class="myphoto">
+            <figure class="myphoto__container">
+                <img src="css/img/profile.jpg" alt="">
+            </figure>
+        </div>
         <div class="main__about">
-            <section class="about">
-                <figure class="about__photo">
-                    <img src="css/img/profile.jpg" alt="">
-                </figure>
-                <h2 class="h2 about__tittle">Sobre mi</h2>
+            <section class="about" id="aboutMe">
+                <h2  class="h2 about__tittle">Sobre mi</h2>
                 <div class="about__profile">
                     <h3 class="h3 profile__subtitle">Perfil</h3>
                     <p class="profile__text">Soy Desarrollador web con conocimiento en diseño y desarrollo de productos digitales.
@@ -143,7 +149,7 @@
         </div>
         <div class="main__portafolio">
             <div class="portafolio">
-                <h2 class="h2">Portafolio</h2>
+                <h2 class="h2" id="portafolio">Portafolio</h2>
                 <div class="portafolio__project">
                     <div class="project">
                         <div class="project__img">
@@ -254,13 +260,14 @@
 
     <footer class="footer">
         <div class="footer__contact">
-            <div class="contact__logo">
+            <div class="contact__logo" id="contact">
                 <figure class="logo__img">
-                    <img src="css/img/logo.svg" alt="">
+                    <img src="/css/img/logo.svg" alt="logo christian" class="img__logo">
+                <img src="/css/img/logoName2.svg" alt="brand christian" class="img__name">
                 </figure>
             </div>
             <div class="contact__together">
-                <p class="together__build">Construyamos Juntos | <span><a href="">Contáctame</a></span></p>
+                <p class="together__build">Construyamos Juntos | <span><a href="mailto:cristianvargas385@gmail.com">Contáctame</a></span></p>
                 <p class="together__web">Desarrollador Web</p>
             </div>
         </div>

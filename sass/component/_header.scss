@@ -3,32 +3,77 @@
 @use '../partial/breakpoint' as br;
 
 .header {
-    min-width: 37.5rem;
-    width: 100%;
-    padding: 0 2rem;
-    min-height: 5rem;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    background-color: m.get-opacity(v.$color-secundary, .54);
+
+    @include br.media(desktop-m) {
+        max-width: 120rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+        
+    &__container {
+
+        min-width: 37.5rem;
+        width: 100%;
+        padding: 0 2rem;
+        min-height: 5rem;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: fixed;
+        background-color: m.get-opacity(v.$color-secundary, .54);
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            height: 6rem;
+        }
+
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-m) {
+            max-width: 120rem;
+        }
+    }
 
     &__logo {
         figure {
             height: 3rem;
+
+            // ---------- RESPONSIVE DESING: desktop ----------
+            @include br.media(desktop-m) {
+                height: 3.5rem;
+            }
+
+            img {
+                height: 100%;
+            }
+            
+            a {
+                height: 100%;
+            }
         }
 
         .img__name {
             display: none;
-        }
 
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(tablet) {
+                display: inline-block;
+                margin-left: 2rem;
+            }
+        }
     }
 
     &__menu {
         width: 3rem;
         height: 3rem;
+
+         // ---------- RESPONSIVE DESING: TABLET ----------
+         @include br.media(tablet) {
+            width: auto;
+        }
     }
+
+    
 }
 
 #menu__burguer {
@@ -40,6 +85,15 @@
         padding: 25rem 0;
         position: fixed;
         transition:all 1s;
+
+         // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            position: static;
+            height: auto;
+            width: auto;
+            transition: none;
+            padding: 0;
+        }
     }
 }
 
@@ -59,8 +113,12 @@
         }
     }
 
-    @include br.media(tablet) {
-        background-color: brown;
+     // ---------- RESPONSIVE DESING: TABLET ----------
+     @include br.media(tablet) {
+        position: static;
+        height: auto;
+        width: auto;
+        display: none;
     }
 }
 
@@ -75,11 +133,26 @@
         width: 100%;
         height: 100%;
         background-color: v.$color-primary;
+
+         // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            position: static;
+            height: 100%;
+            width: auto;
+            margin: auto;
+            background-color: transparent;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            flex-direction: row;
+            height: 100%;
+        }
     }
 }
 .list {
@@ -99,8 +172,28 @@
 
             &:hover {
                 background-color: v.$colorTitle;
+
+                 // ---------- RESPONSIVE DESING: TABLET ----------
+                @include br.media(tablet) {
+                    background-color: transparent;
+                    text-decoration: underline;
+                    color: v.$colorTitle;
+                }
+            }
+
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(tablet) {
+               height: 100%;
+               padding: 8px;
+               font-size: 1.4rem;
             }
         }
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+           height: 100%;
+        }
+
     }
 }
 

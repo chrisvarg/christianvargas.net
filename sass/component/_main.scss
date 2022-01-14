@@ -1,5 +1,6 @@
 @use '../partial/mixins' as m;
 @use '../partial/variable' as v;
+@use '../partial/breakpoint' as br;
 
 .main {
     margin: 0 auto;
@@ -24,12 +25,97 @@
         margin-bottom: 6rem;
         
         text-align: center;
-        font-weight: bold
+        font-weight: bold;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            width: 55%;
+            margin: 0;
+            padding-top: 86px;
+        }
+        
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            width: 100%;
+            margin-bottom: 175px;
+        }
+    }
+
+    .myphoto {
+        width: 100%;
+        margin-bottom: 6rem;
+        
+        &__container {
+            margin: 0 2rem;
+            // ---------- RESPONSIVE DESING: TABLET ----------
+
+            @include br.media(tablet) {
+                margin: 0 auto;
+                width: 30rem;
+                height: 35rem;
+            }
+            // ---------- RESPONSIVE DESING: DESKTOP ----------
+            @include br.media(desktop-m-only) {
+                width: 40rem;
+                height: 55rem;
+            }
+        }
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        // .main
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            width: 42%;
+            margin: 0;
+        }
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            width: 40rem;
+        }
     }
 
     &__about {
-        margin-bottom: 6rem;
         min-height: 35rem;
+
+        // ---------- RESPONSIVE DESING: tablet ----------
+        @include br.media(tablet) {
+            width: 100%;
+        }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            width: 65%;
+        }
+    }
+
+    &__portafolio {
+
+        @include br.media(tablet) {
+            width: 100%;
+        }
+    }
+
+    // ---------- RESPONSIVE DESING: TABLET ----------
+    @include br.media(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 80rem;
+        padding-top: 12.4rem;
+    }
+
+    // ---------- RESPONSIVE DESING: desktop ----------
+    @include br.media(desktop-m) {
+        width: auto;
+        max-width: 1200px;
+        padding-top: 7.2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -39,16 +125,39 @@
 
     .h3 {
         color: v.$colorText;
+
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-m) {
+            @include m.font-size(3.6rem);
+        }
     }
+
     .h2 {
         line-height: 6.5rem;
         font-weight: 700;
         font-size: 5rem;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            @include m.font-size(5.3rem);
+            line-height: 6.5rem;
+        }
+
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-m) {
+            @include m.font-size(7rem);
+        }
     }
+
 
     &__web {
         color: v.$colorTitle;
         margin-bottom: 3rem;
+
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-m) {
+            @include m.font-size(3.6rem);
+        }
     }
 
     &__social {
@@ -71,7 +180,6 @@
 
 // ---------- End Presentation ----------
 
-
 // ---------- About ----------
 
 .about {
@@ -79,26 +187,50 @@
     &__tittle {
         line-height: 5.4rem;
         margin-bottom: 3rem;
-    }
-    
-    &__photo {
-        width: 100%;
-        margin-bottom: 6rem;
-        padding: 0 2rem;
 
-        img {
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            margin-top: 6rem;
             width: 100%;
         }
     }
 
+    .h2 {
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            @include m.substitle(5.3rem);
+        }
+        
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-m) {
+            @include m.substitle(7rem);
+        }
+    }
+    
     &__profile {
-        margin-bottom: 3rem
+        margin-bottom: 3rem;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            width: 50%;
+        }
     }
     
     .profile {
         &__subtitle {
             color: v.$colorTitle;
             margin-bottom: 2rem;
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(tablet) {
+                @include m.font-size(3.2rem);
+            }
+        }
+
+        &__text {
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(tablet) {
+                font-size: 1.8rem;   
+            }
         }
     }
 
@@ -122,10 +254,27 @@
                 font-size: 1.6rem;
             }
         }
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            width: 50%;
+            margin-top: -12rem;
+        }
     }
 
     &__skills {
-        margin-bottom: 3rem; 
+        margin-bottom: 3rem;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            width: 48%;
+        }
+    }
+    // ---------- RESPONSIVE DESING: TABLET ----------
+    @include br.media(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 1.4rem;
     }
 }
 
@@ -153,7 +302,13 @@
         img {
             height: 3.5rem;
             margin-right: 1.2rem;
+
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(tablet) {
+                height: 4rem;
+            }
         }
+        
     }
 }
 
@@ -165,16 +320,29 @@
 .portafolio {
 
     .h2 {
+        padding-top: 6rem;
         margin-bottom: 3rem;
+        
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-m) {
+            @include m.substitle(7rem);
+        }
     }
 
     &__project {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 3rem;
         min-width: 33.5rem;
         min-height: 43.8rem;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            flex-direction: row;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
     }
 
 }
@@ -195,11 +363,42 @@
             width: 100%;
             height: 100%;
         }
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(tablet) {
+            height: 20.2rem;
+        }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            height: 100%;
+            width: 33rem;
+        }
     }
 
     &__information {
         margin: 0 2rem;
         margin-top: 2rem;
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            width: 29rem;
+            margin: 2rem auto;
+        }
+    }
+
+    // ---------- RESPONSIVE DESING: TABLET ----------
+    @include br.media(tablet) {
+        width: 35.4rem;
+        height: 45.8rem;
+    }
+
+    // ---------- RESPONSIVE DESING: DESKTOP ----------
+    @include br.media(desktop-m-only) {
+        // background-color: brown;
+        width: 61.9rem;
+        height: 19.8rem;
+        display: flex;
     }
 }
 
@@ -209,6 +408,15 @@
         margin-bottom: 2rem;
         line-height: 2.76rem;
         color: v.$colorTitle;
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            text-align: center;
+        }
+
+        @include br.media(desktop-m-only) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__tech {
@@ -224,6 +432,16 @@
             list-style: none;
             width: 45%;
         }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            gap: 0;
+        }
+
+        @include br.media(desktop-m-only) {
+            margin-bottom: 1.5rem;
+            justify-content: right;
+        }
     }
 
     &__buttoms {
@@ -236,6 +454,11 @@
             &__write {
                 margin-right: 3rem;
             }
+        }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            margin: 0;
         }
     }
         
@@ -250,15 +473,31 @@
     &--html, &--css {
         width: 4rem;
         height: 4rem;
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 
     &--php {
         width: 5.3rem;
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m-only) {
+            width: 3.5rem;
+        }
     }
 
     &--mysql {
         width: 5.1rem;
         height: 3.5rem;
+
+        @include br.media(desktop-m-only) {
+            width: 4rem;
+            height: 30px;
+        }
     }
     
 }

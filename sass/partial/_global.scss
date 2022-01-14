@@ -41,6 +41,6 @@ a {
 }
 
 i {
-    @include m.font-size(v.$subtitle-size);
+    @include m.font-size(2.8rem);
 }
 
