@@ -387,9 +387,11 @@ i {
 **********************/
 @media only screen and (min-width: 1200px) {
   .header {
-    max-width: 120rem;
+    max-width: 125.8rem;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    width: 90%;
+    height: 6rem;
   }
 }
 .header__container {
@@ -411,7 +413,10 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .header__container {
-    max-width: 120rem;
+    max-width: 125.8rem;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 3rem;
   }
 }
 .header__logo figure {
@@ -550,6 +555,11 @@ i {
     font-size: 1.4rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .list__items a {
+    font-size: 1.8rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .list__items {
     height: 100%;
@@ -585,10 +595,11 @@ i {
     padding-top: 86px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .main__presentation {
     width: 100%;
-    margin-bottom: 175px;
+    padding-bottom: 18.8rem;
+    padding-top: 10.5rem;
   }
 }
 .main .myphoto {
@@ -605,10 +616,10 @@ i {
     height: 35rem;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .main .myphoto__container {
-    width: 40rem;
-    height: 55rem;
+    width: 100%;
+    height: 100%;
   }
 }
 .main .myphoto img {
@@ -621,9 +632,10 @@ i {
     margin: 0;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .main .myphoto {
-    width: 40rem;
+    width: 33.3%;
+    max-width: 40rem;
   }
 }
 .main__about {
@@ -634,9 +646,11 @@ i {
     width: 100%;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .main__about {
     width: 65%;
+    max-width: 74.5rem;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -656,8 +670,8 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .main {
-    width: auto;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 125.8rem;
     padding-top: 7.2rem;
     padding-left: 0;
     padding-right: 0;
@@ -744,6 +758,11 @@ i {
     width: 50%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about__profile {
+    max-width: 35.8rem;
+  }
+}
 .about .profile__subtitle {
   color: #00B2FF;
   margin-bottom: 2rem;
@@ -798,6 +817,11 @@ i {
     width: 48%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about__skills {
+    max-width: 35.8rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .about {
     display: flex;
@@ -837,6 +861,8 @@ i {
 @media only screen and (min-width: 1200px) {
   .portafolio .h2 {
     font-size: 6.7rem;
+    padding-top: 12rem;
+    margin-bottom: 7rem;
   }
 }
 .portafolio__project {
@@ -876,7 +902,7 @@ i {
     height: 20.2rem;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .project__img {
     height: 100%;
     width: 33rem;
@@ -886,7 +912,7 @@ i {
   margin: 0 2rem;
   margin-top: 2rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .project__information {
     width: 29rem;
     margin: 2rem auto;
@@ -898,9 +924,10 @@ i {
     height: 45.8rem;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .project {
-    width: 61.9rem;
+    width: 49%;
+    max-width: 61.9rem;
     height: 19.8rem;
     display: flex;
   }
@@ -911,12 +938,12 @@ i {
   line-height: 2.76rem;
   color: #00B2FF;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .information__text {
     text-align: center;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .information__text {
     margin-bottom: 1.5rem;
   }
@@ -933,12 +960,12 @@ i {
   list-style: none;
   width: 45%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .information__tech {
     gap: 0;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .information__tech {
     margin-bottom: 1.5rem;
     justify-content: right;
@@ -963,7 +990,7 @@ i {
 .information__buttoms .buttom__write {
   margin-right: 3rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .information__buttoms {
     margin: 0;
   }
@@ -976,7 +1003,7 @@ i {
   width: 4rem;
   height: 4rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .tech__item--html, .tech__item--css {
     width: 3rem;
     height: 3rem;
@@ -985,7 +1012,7 @@ i {
 .tech__item--php {
   width: 5.3rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .tech__item--php {
     width: 3.5rem;
   }
@@ -994,7 +1021,7 @@ i {
   width: 5.1rem;
   height: 3.5rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media only screen and (min-width: 1200px) {
   .tech__item--mysql {
     width: 4rem;
     height: 30px;
@@ -1028,6 +1055,15 @@ i {
     margin: 0 auto;
     max-width: 80rem;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer__contact {
+    margin: 0;
+    margin-bottom: 3rem;
+    max-width: 100%;
   }
 }
 .footer__copyright {
@@ -1052,9 +1088,22 @@ i {
     max-width: 80rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .footer__copyright {
+    max-width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .footer {
     margin-top: 12rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer {
+    margin: 0 auto;
+    margin-top: 12rem;
+    width: 90%;
+    max-width: 125.8rem;
   }
 }
 

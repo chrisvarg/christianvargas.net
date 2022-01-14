@@ -35,9 +35,10 @@
         }
         
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             width: 100%;
-            margin-bottom: 175px;
+            padding-bottom: 18.8rem;
+            padding-top: 10.5rem;
         }
     }
 
@@ -55,9 +56,9 @@
                 height: 35rem;
             }
             // ---------- RESPONSIVE DESING: DESKTOP ----------
-            @include br.media(desktop-m-only) {
-                width: 40rem;
-                height: 55rem;
+            @include br.media(desktop-m) {
+                width: 100%;
+                height: 100%;
             }
         }
     
@@ -73,8 +74,9 @@
             margin: 0;
         }
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
-            width: 40rem;
+        @include br.media(desktop-m) {
+            width: 33.3%;
+            max-width: 40rem;
         }
     }
 
@@ -87,8 +89,10 @@
         }
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             width: 65%;
+            max-width: 74.5rem;
+            margin: 0 auto;
         }
     }
 
@@ -111,8 +115,8 @@
 
     // ---------- RESPONSIVE DESING: desktop ----------
     @include br.media(desktop-m) {
-        width: auto;
-        max-width: 1200px;
+        width: 90%;
+        max-width: 125.8rem;
         padding-top: 7.2rem;
         padding-left: 0;
         padding-right: 0;
@@ -214,6 +218,11 @@
         @include br.media(tablet) {
             width: 50%;
         }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m) {
+            max-width: 35.8rem;
+        }
     }
     
     .profile {
@@ -268,6 +277,11 @@
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
             width: 48%;
+        }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m) {
+            max-width: 35.8rem;
         }
     }
     // ---------- RESPONSIVE DESING: TABLET ----------
@@ -326,6 +340,8 @@
         // ---------- RESPONSIVE DESING: desktop ----------
         @include br.media(desktop-m) {
             @include m.substitle(7rem);
+            padding-top: 12rem;
+            margin-bottom: 7rem;
         }
     }
 
@@ -370,7 +386,7 @@
         }
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             height: 100%;
             width: 33rem;
         }
@@ -381,7 +397,7 @@
         margin-top: 2rem;
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             width: 29rem;
             margin: 2rem auto;
         }
@@ -394,9 +410,10 @@
     }
 
     // ---------- RESPONSIVE DESING: DESKTOP ----------
-    @include br.media(desktop-m-only) {
+    @include br.media(desktop-m) {
         // background-color: brown;
-        width: 61.9rem;
+        width: 49%;
+        max-width: 61.9rem;
         height: 19.8rem;
         display: flex;
     }
@@ -410,11 +427,11 @@
         color: v.$colorTitle;
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             text-align: center;
         }
 
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             margin-bottom: 1.5rem;
         }
     }
@@ -434,11 +451,11 @@
         }
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             gap: 0;
         }
 
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             margin-bottom: 1.5rem;
             justify-content: right;
         }
@@ -457,7 +474,7 @@
         }
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             margin: 0;
         }
     }
@@ -475,7 +492,7 @@
         height: 4rem;
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             width: 3rem;
             height: 3rem;
         }
@@ -485,7 +502,7 @@
         width: 5.3rem;
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             width: 3.5rem;
         }
     }
@@ -494,7 +511,7 @@
         width: 5.1rem;
         height: 3.5rem;
 
-        @include br.media(desktop-m-only) {
+        @include br.media(desktop-m) {
             width: 4rem;
             height: 30px;
         }

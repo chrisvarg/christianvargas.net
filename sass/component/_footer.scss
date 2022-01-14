@@ -33,6 +33,15 @@
             margin: 0 auto;
             max-width: 80rem;
             margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m) {
+            margin: 0;
+            margin-bottom: 3rem;
+            max-width: 100%;
         }
     }
 
@@ -59,11 +68,24 @@
             margin: 0 auto;
             max-width: 80rem;
         }
+        
+        // ---------- RESPONSIVE DESING: DESKTOP ----------
+        @include br.media(desktop-m) {
+            max-width: 100%;
+        }
     }
 
     // ---------- RESPONSIVE DESING: TABLET ----------
     @include br.media(tablet) {
         margin-top: 12rem;
+    }
+
+    // ---------- RESPONSIVE DESING: DESKTOP ----------
+    @include br.media(desktop-m) {
+        margin: 0 auto;
+        margin-top: 12rem;
+        width: 90%;
+        max-width: 125.8rem;
     }
 }
 
@@ -91,7 +113,6 @@
             // ---------- RESPONSIVE DESING: TABLET ----------
             @include br.media(tablet) {
                 display: inline-block;
-                // height: 50px;
             }
         }
         

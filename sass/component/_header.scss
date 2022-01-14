@@ -5,9 +5,11 @@
 .header {
 
     @include br.media(desktop-m) {
-        max-width: 120rem;
+        max-width: 125.8rem;
         margin: 0 auto;
-        margin-top: 4rem;
+        margin-top: 2rem;
+        width: 90%;
+        height: 6rem;
     }
         
     &__container {
@@ -30,7 +32,10 @@
 
         // ---------- RESPONSIVE DESING: desktop ----------
         @include br.media(desktop-m) {
-            max-width: 120rem;
+            max-width: 125.8rem;
+            margin: 0 auto;
+            width: 90%;
+            padding: 0 3rem;
         }
     }
 
@@ -72,7 +77,6 @@
             width: auto;
         }
     }
-
     
 }
 
@@ -186,6 +190,11 @@
                height: 100%;
                padding: 8px;
                font-size: 1.4rem;
+            }
+
+            // ---------- RESPONSIVE DESING: desktop ----------
+            @include br.media(desktop-m) {
+                font-size: 1.8rem;
             }
         }
 
