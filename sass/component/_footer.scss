@@ -20,21 +20,21 @@
     }
 
     &__contact {
+        border-bottom: 3px solid v.$colorTitle;
         display: flex;
         flex-direction: column;
-        border-bottom: 3px solid v.$colorTitle;
         margin-bottom: 3rem;
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
             flex-direction: row;
-            justify-content: space-between;
-            padding-bottom: 3rem;
-            margin: 0 auto;
-            max-width: 80rem;
-            margin-bottom: 3rem;
             flex-wrap: wrap;
             gap: 2rem;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            max-width: 80rem;
+            padding-bottom: 3rem;
         }
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
@@ -63,8 +63,8 @@
 
         @include br.media(tablet) {
             display: flex;
-            justify-content: space-between;
             flex-direction: row-reverse;
+            justify-content: space-between;
             margin: 0 auto;
             max-width: 80rem;
         }
@@ -84,8 +84,8 @@
     @include br.media(desktop-m) {
         margin: 0 auto;
         margin-top: 12rem;
-        width: 90%;
         max-width: 125.8rem;
+        width: 90%;
     }
 }
 
@@ -113,13 +113,14 @@
             // ---------- RESPONSIVE DESING: TABLET ----------
             @include br.media(tablet) {
                 display: inline-block;
+                height: 100%;
             }
         }
         
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            display: flex;
             align-items: center;
+            display: flex;
         }
     }
 }
@@ -136,8 +137,8 @@
     }
 
     &__web {
-        margin-bottom: 3rem;
         color: v.$colorTitle;
+        margin-bottom: 3rem;
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {

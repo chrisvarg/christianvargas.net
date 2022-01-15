@@ -348,12 +348,12 @@ template {
 }
 
 html {
+  color: #FFFFFF;
   background-image: url(/css/img/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
   font-size: 62.5%;
 }
 
@@ -373,9 +373,9 @@ p {
 }
 
 a {
+  color: #FFFFFF;
   display: inline-block;
   text-decoration: none;
-  color: #FFFFFF;
 }
 
 i {
@@ -387,24 +387,24 @@ i {
 **********************/
 @media only screen and (min-width: 1200px) {
   .header {
-    max-width: 125.8rem;
+    height: 6rem;
     margin: 0 auto;
     margin-top: 2rem;
+    max-width: 125.8rem;
     width: 90%;
-    height: 6rem;
   }
 }
 .header__container {
-  min-width: 37.5rem;
-  width: 100%;
-  padding: 0 2rem;
-  min-height: 5rem;
   align-items: center;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: fixed;
   background-color: rgba(29, 30, 35, 0.54);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 5rem;
+  min-width: 37.5rem;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .header__container {
@@ -415,8 +415,8 @@ i {
   .header__container {
     max-width: 125.8rem;
     margin: 0 auto;
-    width: 90%;
     padding: 0 3rem;
+    width: 90%;
   }
 }
 .header__logo figure {
@@ -443,8 +443,8 @@ i {
   }
 }
 .header__menu {
-  width: 3rem;
   height: 3rem;
+  width: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .header__menu {
@@ -456,62 +456,61 @@ i {
   display: none;
 }
 #menu__burguer:checked ~ .menu__content {
-  width: 100vw;
   height: 100%;
   padding: 25rem 0;
   position: fixed;
   transition: all 1s;
+  width: 100vw;
 }
 @media only screen and (min-width: 768px) {
   #menu__burguer:checked ~ .menu__content {
-    position: static;
     height: auto;
-    width: auto;
-    transition: none;
     padding: 0;
+    position: static;
+    transition: none;
+    width: auto;
   }
 }
 
 .burguer__container {
-  width: 3rem;
   height: 3rem;
   position: absolute;
+  width: 3rem;
   z-index: 1;
 }
 .burguer__container i {
+  color: #FFFFFF;
   font-size: 2.3rem;
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
-  color: #FFFFFF;
 }
 .burguer__container i:hover {
   background-color: #00B2FF;
 }
 @media only screen and (min-width: 768px) {
   .burguer__container {
-    position: static;
-    height: auto;
-    width: auto;
     display: none;
+    height: auto;
+    position: static;
+    width: auto;
   }
 }
 
 .menu__content {
-  background-color: coral;
-  top: 0;
+  background-color: #2D2E32;
+  height: 100%;
   left: 0;
   margin-top: -19rem;
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 100%;
-  background-color: #2D2E32;
 }
 @media only screen and (min-width: 768px) {
   .menu__content {
-    position: static;
-    height: 100%;
-    width: auto;
-    margin: auto;
     background-color: transparent;
+    height: 100%;
+    margin: auto;
+    position: static;
+    width: auto;
   }
 }
 .menu__list {
@@ -527,15 +526,15 @@ i {
 
 .list__items {
   height: 6rem;
-  width: 100%;
   list-style: none;
+  width: 100%;
 }
 .list__items a {
   font-size: 2rem;
-  padding-top: 2.3rem;
   font-weight: 700;
-  text-align: center;
   height: 100%;
+  padding-top: 2.3rem;
+  text-align: center;
   width: 100%;
 }
 .list__items a:hover {
@@ -544,15 +543,15 @@ i {
 @media only screen and (min-width: 768px) {
   .list__items a:hover {
     background-color: transparent;
-    text-decoration: underline;
     color: #00B2FF;
+    text-decoration: underline;
   }
 }
 @media only screen and (min-width: 768px) {
   .list__items a {
+    font-size: 1.4rem;
     height: 100%;
     padding: 8px;
-    font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -569,15 +568,15 @@ i {
 .main {
   margin: 0 auto;
   margin-bottom: 6rem;
-  padding-top: 11rem;
+  max-width: 44.3rem;
+  min-width: 33.6rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  min-width: 33.6rem;
-  max-width: 44.3rem;
+  padding-top: 11rem;
 }
 .main .h2 {
-  font-size: 4.7rem;
   text-align: center;
+  font-size: 4.7rem;
 }
 .main .h3 {
   color: #00B2FF;
@@ -585,57 +584,57 @@ i {
 .main__presentation {
   margin: 0 auto;
   margin-bottom: 6rem;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .main__presentation {
-    width: 55%;
     margin: 0;
     padding-top: 86px;
+    width: 55%;
   }
 }
 @media only screen and (min-width: 1200px) {
   .main__presentation {
-    width: 100%;
     padding-bottom: 18.8rem;
     padding-top: 10.5rem;
+    width: 100%;
   }
 }
 .main .myphoto {
-  width: 100%;
   margin-bottom: 6rem;
+  width: 100%;
 }
 .main .myphoto__container {
   margin: 0 2rem;
 }
 @media only screen and (min-width: 768px) {
   .main .myphoto__container {
+    height: 35rem;
     margin: 0 auto;
     width: 30rem;
-    height: 35rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .main .myphoto__container {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
 .main .myphoto img {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .main .myphoto {
-    width: 42%;
     margin: 0;
+    width: 42%;
   }
 }
 @media only screen and (min-width: 1200px) {
   .main .myphoto {
-    width: 33.3%;
     max-width: 40rem;
+    width: 33.3%;
   }
 }
 .main__about {
@@ -648,9 +647,9 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .main__about {
-    width: 65%;
-    max-width: 74.5rem;
     margin: 0 auto;
+    max-width: 74.5rem;
+    width: 65%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -670,11 +669,11 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .main {
-    width: 90%;
     max-width: 125.8rem;
-    padding-top: 7.2rem;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 7.2rem;
+    width: 90%;
   }
 }
 
@@ -688,9 +687,9 @@ i {
   }
 }
 .presentation .h2 {
-  line-height: 6.5rem;
-  font-weight: 700;
   font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.5rem;
 }
 @media only screen and (min-width: 768px) {
   .presentation .h2 {
@@ -716,11 +715,10 @@ i {
   }
 }
 .presentation__social {
-  height: 3.4rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 3rem;
+  justify-content: center;
 }
 .presentation__social a {
   display: block;
@@ -805,8 +803,8 @@ i {
 }
 @media only screen and (min-width: 768px) {
   .about__buttoms {
-    width: 50%;
     margin-top: -12rem;
+    width: 50%;
   }
 }
 .about__skills {
@@ -834,14 +832,14 @@ i {
   margin-bottom: 2rem;
 }
 .skills__list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  list-style: none;
 }
 .skills__items {
-  display: flex;
   align-items: center;
+  display: flex;
   width: 45%;
 }
 .skills__items img {
@@ -855,28 +853,28 @@ i {
 }
 
 .portafolio .h2 {
-  padding-top: 6rem;
   margin-bottom: 3rem;
+  padding-top: 6rem;
 }
 @media only screen and (min-width: 1200px) {
   .portafolio .h2 {
-    font-size: 6.7rem;
-    padding-top: 12rem;
     margin-bottom: 7rem;
+    padding-top: 12rem;
+    font-size: 6.7rem;
   }
 }
 .portafolio__project {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 3rem;
-  min-width: 33.5rem;
+  justify-content: space-between;
   min-height: 43.8rem;
+  min-width: 33.5rem;
 }
 @media only screen and (min-width: 768px) {
   .portafolio__project {
-    flex-direction: row;
     gap: 2rem;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -886,16 +884,22 @@ i {
   border-radius: 2rem;
 }
 .project__img {
-  width: 100%;
-  border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
   height: 18.2rem;
+  width: 100%;
 }
 .project__img img {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .project__img img {
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   .project__img {
@@ -914,29 +918,29 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .project__information {
-    width: 29rem;
     margin: 2rem auto;
+    width: 29rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .project {
-    width: 35.4rem;
     height: 45.8rem;
+    width: 35.4rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .project {
-    width: 49%;
-    max-width: 61.9rem;
-    height: 19.8rem;
     display: flex;
+    height: 19.8rem;
+    max-width: 61.9rem;
+    width: 49%;
   }
 }
 
 .information__text {
-  margin-bottom: 2rem;
-  line-height: 2.76rem;
   color: #00B2FF;
+  line-height: 2.76rem;
+  margin-bottom: 2rem;
 }
 @media only screen and (min-width: 1200px) {
   .information__text {
@@ -955,8 +959,8 @@ i {
   margin-bottom: 3rem;
 }
 .information__tech li {
-  display: flex;
   align-items: center;
+  display: flex;
   list-style: none;
   width: 45%;
 }
@@ -967,13 +971,13 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .information__tech {
-    margin-bottom: 1.5rem;
     justify-content: right;
+    margin-bottom: 1.5rem;
   }
 }
 .information__buttoms {
-  text-align: center;
   margin-bottom: 3rem;
+  text-align: center;
 }
 .information__buttoms .buttom {
   padding: 10px 15px;
@@ -983,12 +987,12 @@ i {
   border: 0.2rem solid #00B2FF;
   border-radius: 3rem;
 }
+.information__buttoms .buttom__write {
+  margin-right: 3rem;
+}
 .information__buttoms .buttom:hover {
   background-color: #00B2FF;
   color: #2D2E32;
-}
-.information__buttoms .buttom__write {
-  margin-right: 3rem;
 }
 @media only screen and (min-width: 1200px) {
   .information__buttoms {
@@ -1000,13 +1004,13 @@ i {
   margin-right: 1.2rem;
 }
 .tech__item--html, .tech__item--css {
-  width: 4rem;
   height: 4rem;
+  width: 4rem;
 }
 @media only screen and (min-width: 1200px) {
   .tech__item--html, .tech__item--css {
-    width: 3rem;
     height: 3rem;
+    width: 3rem;
   }
 }
 .tech__item--php {
@@ -1018,13 +1022,13 @@ i {
   }
 }
 .tech__item--mysql {
-  width: 5.1rem;
   height: 3.5rem;
+  width: 5.1rem;
 }
 @media only screen and (min-width: 1200px) {
   .tech__item--mysql {
-    width: 4rem;
     height: 30px;
+    width: 4rem;
   }
 }
 
@@ -1042,21 +1046,21 @@ i {
   color: #00B2FF;
 }
 .footer__contact {
+  border-bottom: 3px solid #00B2FF;
   display: flex;
   flex-direction: column;
-  border-bottom: 3px solid #00B2FF;
   margin-bottom: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .footer__contact {
     flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 3rem;
-    margin: 0 auto;
-    max-width: 80rem;
-    margin-bottom: 3rem;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    max-width: 80rem;
+    padding-bottom: 3rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1082,8 +1086,8 @@ i {
 @media only screen and (min-width: 768px) {
   .footer__copyright {
     display: flex;
-    justify-content: space-between;
     flex-direction: row-reverse;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 80rem;
   }
@@ -1102,8 +1106,8 @@ i {
   .footer {
     margin: 0 auto;
     margin-top: 12rem;
-    width: 90%;
     max-width: 125.8rem;
+    width: 90%;
   }
 }
 
@@ -1127,12 +1131,13 @@ i {
 @media only screen and (min-width: 768px) {
   .contact__logo .img__name {
     display: inline-block;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 768px) {
   .contact__logo {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 }
 
@@ -1145,13 +1150,12 @@ i {
   }
 }
 .together__web {
-  margin-bottom: 3rem;
   color: #00B2FF;
+  margin-bottom: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .together__web {
     margin: 0;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

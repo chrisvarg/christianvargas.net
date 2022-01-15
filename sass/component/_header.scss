@@ -5,25 +5,25 @@
 .header {
 
     @include br.media(desktop-m) {
-        max-width: 125.8rem;
+        height: 6rem;
         margin: 0 auto;
         margin-top: 2rem;
+        max-width: 125.8rem;
         width: 90%;
-        height: 6rem;
     }
         
     &__container {
 
-        min-width: 37.5rem;
-        width: 100%;
-        padding: 0 2rem;
-        min-height: 5rem;
         align-items: center;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        position: fixed;
         background-color: m.get-opacity(v.$color-secundary, .54);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 5rem;
+        min-width: 37.5rem;
+        padding: 0 2rem;
+        position: fixed;
+        width: 100%;
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
@@ -34,8 +34,8 @@
         @include br.media(desktop-m) {
             max-width: 125.8rem;
             margin: 0 auto;
-            width: 90%;
             padding: 0 3rem;
+            width: 90%;
         }
     }
 
@@ -69,8 +69,8 @@
     }
 
     &__menu {
-        width: 3rem;
         height: 3rem;
+        width: 3rem;
 
          // ---------- RESPONSIVE DESING: TABLET ----------
          @include br.media(tablet) {
@@ -84,33 +84,33 @@
     display: none;
 
     &:checked ~ .menu__content {
-        width: 100vw;
         height: 100%;
         padding: 25rem 0;
         position: fixed;
         transition:all 1s;
+        width: 100vw;
 
          // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            position: static;
             height: auto;
-            width: auto;
-            transition: none;
             padding: 0;
+            position: static;
+            transition: none;
+            width: auto;
         }
     }
 }
 
 .burguer__container {
-    width: 3rem;
     height: 3rem;
     position: absolute;
+    width: 3rem;
     z-index: 1;
     
     i {
+        color: v.$colorText;
         font-size: 2.3rem;
         padding: .4rem .5rem .4rem .5rem ;
-        color: v.$colorText;
         
         &:hover {
             background-color: v.$colorTitle;
@@ -119,32 +119,31 @@
 
      // ---------- RESPONSIVE DESING: TABLET ----------
      @include br.media(tablet) {
-        position: static;
-        height: auto;
-        width: auto;
         display: none;
+        height: auto;
+        position: static;
+        width: auto;
     }
 }
 
 .menu {
 
     &__content {
-        background-color: coral;
-        top: 0;
+        background-color: v.$color-primary;
+        height: 100%;
         left: 0;
         margin-top: -19rem;
         position: absolute;
+        top: 0;
         width: 100%;
-        height: 100%;
-        background-color: v.$color-primary;
 
          // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            position: static;
-            height: 100%;
-            width: auto;
-            margin: auto;
             background-color: transparent;
+            height: 100%;
+            margin: auto;
+            position: static;
+            width: auto;
         }
     }
 
@@ -163,15 +162,15 @@
 
     &__items {
         height: 6rem;
-        width: 100%;
         list-style: none;
+        width: 100%;
 
         a {
             font-size: 2rem;
-            padding-top: 2.3rem;
             font-weight: 700;
-            text-align: center;
             height: 100%;
+            padding-top: 2.3rem;
+            text-align: center;
             width: 100%;
 
             &:hover {
@@ -180,16 +179,16 @@
                  // ---------- RESPONSIVE DESING: TABLET ----------
                 @include br.media(tablet) {
                     background-color: transparent;
-                    text-decoration: underline;
                     color: v.$colorTitle;
+                    text-decoration: underline;
                 }
             }
 
             // ---------- RESPONSIVE DESING: TABLET ----------
             @include br.media(tablet) {
-               height: 100%;
-               padding: 8px;
-               font-size: 1.4rem;
+                font-size: 1.4rem;
+                height: 100%;
+                padding: 8px;
             }
 
             // ---------- RESPONSIVE DESING: desktop ----------
@@ -202,7 +201,6 @@
         @include br.media(tablet) {
            height: 100%;
         }
-
     }
 }
 

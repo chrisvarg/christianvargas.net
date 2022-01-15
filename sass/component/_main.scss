@@ -5,15 +5,15 @@
 .main {
     margin: 0 auto;
     margin-bottom: 6rem;
-    padding-top: 11rem;
+    max-width: 44.3rem;
+    min-width: 33.6rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    min-width: 33.6rem;
-    max-width: 44.3rem;
+    padding-top: 11rem;
 
     .h2 {
-        @include m.substitle(5rem);
         text-align: center;
+        @include m.substitle(5rem);
     }
 
     .h3 {
@@ -22,61 +22,60 @@
 
     &__presentation {
         margin: 0 auto;
-        margin-bottom: 6rem;
-        
-        text-align: center;
+        margin-bottom: 6rem;  
         font-weight: bold;
+        text-align: center;
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            width: 55%;
             margin: 0;
             padding-top: 86px;
+            width: 55%;
         }
         
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
-            width: 100%;
             padding-bottom: 18.8rem;
             padding-top: 10.5rem;
+            width: 100%;
         }
     }
 
     .myphoto {
-        width: 100%;
         margin-bottom: 6rem;
+        width: 100%;
         
         &__container {
             margin: 0 2rem;
-            // ---------- RESPONSIVE DESING: TABLET ----------
 
+            // ---------- RESPONSIVE DESING: TABLET ----------
             @include br.media(tablet) {
+                height: 35rem;
                 margin: 0 auto;
                 width: 30rem;
-                height: 35rem;
             }
             // ---------- RESPONSIVE DESING: DESKTOP ----------
             @include br.media(desktop-m) {
-                width: 100%;
                 height: 100%;
+                width: 100%;
             }
         }
     
         img {
-            width: 100%;
             height: 100%;
+            width: 100%;
         }
 
         // .main
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            width: 42%;
             margin: 0;
+            width: 42%;
         }
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
-            width: 33.3%;
             max-width: 40rem;
+            width: 33.3%;
         }
     }
 
@@ -90,9 +89,9 @@
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
-            width: 65%;
-            max-width: 74.5rem;
             margin: 0 auto;
+            max-width: 74.5rem;
+            width: 65%;
         }
     }
 
@@ -115,16 +114,15 @@
 
     // ---------- RESPONSIVE DESING: desktop ----------
     @include br.media(desktop-m) {
-        width: 90%;
         max-width: 125.8rem;
-        padding-top: 7.2rem;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 7.2rem;
+        width: 90%;
     }
 }
 
 // ---------- Presentation ----------
-
 .presentation {
 
     .h3 {
@@ -137,9 +135,9 @@
     }
 
     .h2 {
-        line-height: 6.5rem;
-        font-weight: 700;
         font-size: 5rem;
+        font-weight: 700;
+        line-height: 6.5rem;
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
@@ -165,11 +163,10 @@
     }
 
     &__social {
-        height: 3.4rem;
-        display: flex;
-        justify-content: center;
         align-items: center;
+        display: flex;
         height: 3rem;
+        justify-content: center;
         
         a {
             display: block;
@@ -187,7 +184,6 @@
 // ---------- About ----------
 
 .about {
-
     &__tittle {
         line-height: 5.4rem;
         margin-bottom: 3rem;
@@ -249,7 +245,7 @@
         
         .buttom {
             @include m.buttom(1.4rem);
-        
+
             &__write {
                 margin-right: 2rem;
             }
@@ -266,8 +262,8 @@
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            width: 50%;
             margin-top: -12rem;
+            width: 50%;
         }
     }
 
@@ -302,15 +298,15 @@
     }
 
     &__list {
-        list-style: none;
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
+        list-style: none;
     }
 
     &__items {
-        display: flex;
         align-items: center;
+        display: flex;
         width: 45%;
 
         img {
@@ -322,7 +318,6 @@
                 height: 4rem;
             }
         }
-        
     }
 }
 
@@ -334,29 +329,29 @@
 .portafolio {
 
     .h2 {
-        padding-top: 6rem;
         margin-bottom: 3rem;
+        padding-top: 6rem;
         
         // ---------- RESPONSIVE DESING: desktop ----------
         @include br.media(desktop-m) {
-            @include m.substitle(7rem);
-            padding-top: 12rem;
             margin-bottom: 7rem;
+            padding-top: 12rem;
+            @include m.substitle(7rem);
         }
     }
 
     &__project {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         gap: 3rem;
-        min-width: 33.5rem;
+        justify-content: space-between;
         min-height: 43.8rem;
+        min-width: 33.5rem;
 
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
-            flex-direction: row;
             gap: 2rem;
+            flex-direction: row;
             flex-wrap: wrap;
         }
     }
@@ -368,16 +363,22 @@
     border-radius: 2rem;
 
     &__img {
-        width: 100%;
-        border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
         height: 18.2rem;
+        width: 100%;
 
         img {
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
-            width: 100%;
             height: 100%;
+            width: 100%;
+
+            // ---------- RESPONSIVE DESING: DESKTOP ----------
+            @include br.media(desktop-m) {
+                border-bottom-left-radius: 2rem;
+                border-top-right-radius: 0;
+            }
         }
 
         // ---------- RESPONSIVE DESING: TABLET ----------
@@ -398,33 +399,32 @@
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
-            width: 29rem;
             margin: 2rem auto;
+            width: 29rem;
         }
     }
 
     // ---------- RESPONSIVE DESING: TABLET ----------
     @include br.media(tablet) {
-        width: 35.4rem;
         height: 45.8rem;
+        width: 35.4rem;
     }
 
     // ---------- RESPONSIVE DESING: DESKTOP ----------
     @include br.media(desktop-m) {
-        // background-color: brown;
-        width: 49%;
-        max-width: 61.9rem;
-        height: 19.8rem;
         display: flex;
+        height: 19.8rem;
+        max-width: 61.9rem;
+        width: 49%;
     }
 }
 
 .information {
 
     &__text {
-        margin-bottom: 2rem;
-        line-height: 2.76rem;
         color: v.$colorTitle;
+        line-height: 2.76rem;
+        margin-bottom: 2rem;
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
@@ -439,13 +439,12 @@
     &__tech {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
         gap: 1.3rem 2.9rem;
         margin-bottom: 3rem;
 
         li {
-            display: flex;
             align-items: center;
+            display: flex;
             list-style: none;
             width: 45%;
         }
@@ -456,21 +455,21 @@
         }
 
         @include br.media(desktop-m) {
-            margin-bottom: 1.5rem;
             justify-content: right;
+            margin-bottom: 1.5rem;
         }
     }
 
     &__buttoms {
-        text-align: center;
         margin-bottom: 3rem;
+        text-align: center;
 
         .buttom {
-            @include m.buttom(1.4rem);
             
             &__write {
                 margin-right: 3rem;
             }
+            @include m.buttom(1.4rem);
         }
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
@@ -478,7 +477,6 @@
             margin: 0;
         }
     }
-        
 }
 
 .tech__item {
@@ -488,13 +486,13 @@
     }
 
     &--html, &--css {
-        width: 4rem;
         height: 4rem;
+        width: 4rem;
 
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
-            width: 3rem;
             height: 3rem;
+            width: 3rem;
         }
     }
 
@@ -508,13 +506,12 @@
     }
 
     &--mysql {
-        width: 5.1rem;
         height: 3.5rem;
+        width: 5.1rem;
 
         @include br.media(desktop-m) {
-            width: 4rem;
             height: 30px;
+            width: 4rem;
         }
-    }
-    
+    }   
 }

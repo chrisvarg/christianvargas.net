@@ -3,8 +3,8 @@
     ---------- My Styles ----------
 */
 
-@use '../partial/variable' as v;
 @use '../partial/mixins' as m;
+@use '../partial/variable' as v;
 
 * {
     box-sizing: border-box;
@@ -13,12 +13,12 @@
 }
 
 html {
+    color: v.$colorText;
     background-image: url(/css/img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     font-family: v.$font;
-    color: v.$colorText;
     font-size: 62.5%;
 }
 
@@ -35,9 +35,9 @@ p {
 }
 
 a {
+    color: v.$colorText;
     display: inline-block;
     text-decoration: none;
-    color: v.$colorText;
 }
 
 i {
