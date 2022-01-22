@@ -5,7 +5,6 @@
 .header {
 
     @include br.media(desktop-m) {
-        height: 6rem;
         margin: 0 auto;
         margin-top: 2rem;
         max-width: 125.8rem;
@@ -15,12 +14,11 @@
     &__container {
 
         align-items: center;
-        background-color: m.get-opacity(v.$color-secundary, .54);
+        background-color: v.$color-secundary;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        min-height: 5rem;
-        min-width: 37.5rem;
+        height: 6rem;
         padding: 0 2rem;
         position: fixed;
         width: 100%;
@@ -107,13 +105,16 @@
     width: 3rem;
     z-index: 1;
     
+    
     i {
         color: v.$colorText;
         font-size: 2.3rem;
         padding: .4rem .5rem .4rem .5rem ;
-        
+        transition: all 0.5s;
+
         &:hover {
             background-color: v.$colorTitle;
+
         }
     }
 
@@ -165,6 +166,7 @@
         list-style: none;
         width: 100%;
 
+
         a {
             font-size: 2rem;
             font-weight: 700;
@@ -175,12 +177,14 @@
 
             &:hover {
                 background-color: v.$colorTitle;
+                transition: all 1s;
 
                  // ---------- RESPONSIVE DESING: TABLET ----------
                 @include br.media(tablet) {
                     background-color: transparent;
                     color: v.$colorTitle;
                     text-decoration: underline;
+                    transition: all 1s;
                 }
             }
 
@@ -189,6 +193,7 @@
                 font-size: 1.4rem;
                 height: 100%;
                 padding: 8px;
+                transition: all 0.5s;
             }
 
             // ---------- RESPONSIVE DESING: desktop ----------
@@ -200,6 +205,10 @@
         // ---------- RESPONSIVE DESING: TABLET ----------
         @include br.media(tablet) {
            height: 100%;
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }

@@ -348,13 +348,17 @@ template {
 }
 
 html {
+  font-size: 62.5%;
+}
+
+body {
   color: #FFFFFF;
-  background-image: url(/css/img/background.png);
+  font-family: "Roboto", sans-serif;
+  background-image: url(/css/img/fondo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  font-family: "Roboto", sans-serif;
-  font-size: 62.5%;
+  background-color: #1A1C20;
 }
 
 h2 {
@@ -387,7 +391,6 @@ i {
 **********************/
 @media only screen and (min-width: 1200px) {
   .header {
-    height: 6rem;
     margin: 0 auto;
     margin-top: 2rem;
     max-width: 125.8rem;
@@ -396,12 +399,11 @@ i {
 }
 .header__container {
   align-items: center;
-  background-color: rgba(29, 30, 35, 0.54);
+  background-color: #0e0f11;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 5rem;
-  min-width: 37.5rem;
+  height: 6rem;
   padding: 0 2rem;
   position: fixed;
   width: 100%;
@@ -482,6 +484,7 @@ i {
   color: #FFFFFF;
   font-size: 2.3rem;
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+  transition: all 0.5s;
 }
 .burguer__container i:hover {
   background-color: #00B2FF;
@@ -496,7 +499,7 @@ i {
 }
 
 .menu__content {
-  background-color: #2D2E32;
+  background-color: #1A1C20;
   height: 100%;
   left: 0;
   margin-top: -19rem;
@@ -539,12 +542,14 @@ i {
 }
 .list__items a:hover {
   background-color: #00B2FF;
+  transition: all 1s;
 }
 @media only screen and (min-width: 768px) {
   .list__items a:hover {
     background-color: transparent;
     color: #00B2FF;
     text-decoration: underline;
+    transition: all 1s;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -552,6 +557,7 @@ i {
     font-size: 1.4rem;
     height: 100%;
     padding: 8px;
+    transition: all 0.5s;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -562,6 +568,10 @@ i {
 @media only screen and (min-width: 768px) {
   .list__items {
     height: 100%;
+    transition: all 1s;
+  }
+  .list__items:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -596,8 +606,8 @@ i {
 }
 @media only screen and (min-width: 1200px) {
   .main__presentation {
-    padding-bottom: 18.8rem;
-    padding-top: 10.5rem;
+    padding-bottom: 16rem;
+    padding-top: 13rem;
     width: 100%;
   }
 }
@@ -672,7 +682,7 @@ i {
     max-width: 125.8rem;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 7.2rem;
+    padding-top: 0;
     width: 90%;
   }
 }
@@ -789,7 +799,7 @@ i {
 }
 .about__buttoms .buttom:hover {
   background-color: #00B2FF;
-  color: #2D2E32;
+  color: #1A1C20;
 }
 .about__buttoms .buttom__write {
   margin-right: 2rem;
@@ -880,7 +890,7 @@ i {
 }
 
 .project {
-  background-color: #1D1E23;
+  background-color: #0e0f11;
   border-radius: 2rem;
 }
 .project__img {
@@ -992,7 +1002,7 @@ i {
 }
 .information__buttoms .buttom:hover {
   background-color: #00B2FF;
-  color: #2D2E32;
+  color: #1A1C20;
 }
 @media only screen and (min-width: 1200px) {
   .information__buttoms {
@@ -1158,4 +1168,5 @@ i {
     margin: 0;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

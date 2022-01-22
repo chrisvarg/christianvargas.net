@@ -35,8 +35,8 @@
         
         // ---------- RESPONSIVE DESING: DESKTOP ----------
         @include br.media(desktop-m) {
-            padding-bottom: 18.8rem;
-            padding-top: 10.5rem;
+            padding-bottom: 16rem;
+            padding-top: 13rem;
             width: 100%;
         }
     }
@@ -117,7 +117,7 @@
         max-width: 125.8rem;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 7.2rem;
+        padding-top: 0;
         width: 90%;
     }
 }

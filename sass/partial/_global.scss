@@ -13,13 +13,17 @@
 }
 
 html {
+    font-size: 62.5%;
+}
+
+body {
     color: v.$colorText;
-    background-image: url(/css/img/background.png);
+    font-family: v.$font;
+    background-image: url(/css/img/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    font-family: v.$font;
-    font-size: 62.5%;
+    background-color: v.$color-primary;
 }
 
 h2 {
