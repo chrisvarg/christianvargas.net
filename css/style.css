@@ -459,7 +459,8 @@ i {
 }
 #menu__burguer:checked ~ .menu__content {
   height: 100%;
-  padding: 25rem 0;
+  padding-bottom: 102rem;
+  padding-top: 25rem;
   position: fixed;
   transition: all 1s;
   width: 100vw;
